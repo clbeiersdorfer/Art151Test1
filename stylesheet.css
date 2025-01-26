@@ -1,0 +1,44 @@
+  /* Container to hold the moving divs */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+        }
+
+        /* Styles for the left-right moving div */
+        #leftRight {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            position: relative;
+            animation: moveLeftRight 3s infinite alternate;
+        }
+
+        /* Animation for left-right movement */
+        @keyframes moveLeftRight {
+            from {
+                left: 0;
+            }
+            to {
+                left: 200px;
+            }
+        }
+
+        /* Styles for the up-down moving div */
+        #upDown {
+            width: 100px;
+            height: 100px;
+            background-color: #f44336;
+            position: relative;
+            animation: moveUpDown 3s infinite alternate;
+        }
+
+        /* Animation for up-down movement */
+        @keyframes moveUpDown {
+            from {
+                top: 0;
+            }
+            to {
+                top: 200px;
+            }
+        }
